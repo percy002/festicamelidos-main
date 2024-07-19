@@ -74,39 +74,25 @@ function NavbarFB() {
           <div
             className={`font-bold text-lg flex justify-center`}
           >
-            <a
-              href="/assets/images/reglamento.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`px-2 ${
-                isActive("/reglamento")
-                  ? "border-b-4 "
-                  : "hover:border-b-4 "
-              } ${
-                scrolled? "border-white" : "md:border-primary"
-              }`}
-            >
-              REGLAMENTO
-            </a>
+            <Link to="/reglamento" className={`px-2 ${
+              isActive("/reglamento")
+                ? "border-b-4 "
+                : "hover:border-b-4 "
+            } ${
+              scrolled? "border-white" : "md:border-primary"
+            }`}>REGLAMENTO</Link>
           </div>
 
           <div
             className={`font-bold text-lg flex justify-center`}
           >
-            <a
-              href="/assets/images/programa.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`px-2 ${
-                isActive("/programa")
-                  ? "border-b-4 "
-                  : "hover:border-b-4 "
-              } ${
-                scrolled? "border-white" : "md:border-primary"
-              }`}
-            >
-              PROGRAMA
-            </a>
+            <Link to="/programa" className={`px-2 ${
+              isActive("/programa")
+                ? "border-b-4 "
+                : "hover:border-b-4 "
+            } ${
+              scrolled? "border-white" : "md:border-primary"
+            }`}>PROGRAMA</Link>
           </div>
 
           <div

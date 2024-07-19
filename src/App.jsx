@@ -3,18 +3,21 @@ import NavbarFB from './components/UI/NavbarFB';
 import Footer from './components/UI/Footer';
 import Home from './components/Home';
 import Nosotros from './components/home/Nosotros';
+import Reglamento from './components/Reglamento';
+import Programa from './components/Programa';
 
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <NavbarFB /> {/* Incluye el encabezado aquí */}
+        <NavbarFB />
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/nosotros" element={<Nosotros />} />
-            {/* <Route path="/contact" element={<Contact />} /> */}
+            <Route path="/reglamento" element={<Reglamento />} />
+            <Route path="/programa" element={<Programa />} />
           </Routes>
         </main>
         <Footer />
