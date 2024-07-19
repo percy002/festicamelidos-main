@@ -1,11 +1,11 @@
 import { useState, useEffect, useRef } from "react";
 import { Navbar } from "flowbite-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { HiHome } from "react-icons/hi";
 import { Map } from "./Map";
 
 const customNavbar = {
-  root: {    
+  root: {
     inner: {
       base: "mx-auto flex flex-wrap items-center justify-end",
       fluid: {
@@ -14,11 +14,13 @@ const customNavbar = {
       },
     },
   },
-  
 };
 
 function NavbarFB() {
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+
+  const isActive = (path) => location.pathname === path;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,33 +39,80 @@ function NavbarFB() {
 
   return (
     <Navbar
-        theme={customNavbar}
+      theme={customNavbar}
       fluid
       className={`bg-primary text-white md:bg-transparent z-100 md:px-16 fixed z-50 w-full md:py-5 ${
         scrolled ? "md:bg-primary text-white" : "md:text-primary"
       } `}
     >
-      
       <Navbar.Toggle className="text-white hover:bg-transparent" />
       <Navbar.Collapse className="mx-auto">
         <>
-          <div className="font-bold text-lg flex justify-center">
-            <Link to="/">INICIO</Link>
+          <div
+            className={`font-bold text-lg flex justify-center`}
+          >
+            <Link to="/" className={`px-2 ${
+              isActive("/")
+                ? "border-b-4 "
+                : "hover:border-b-4 "
+            } ${
+              scrolled? "border-white" : "md:border-primary"
+            }`}>INICIO</Link>
           </div>
-          <div className="font-bold text-lg flex justify-center">
-            <Link to="/Nosotros">NOSOTROS</Link>
+          <div
+            className={`font-bold text-lg flex justify-center`}
+          >
+            <Link to="/nosotros" className={`px-2 ${
+              isActive("/nosotros")
+                ? "border-b-4 "
+                : "hover:border-b-4 "
+            } ${
+              scrolled? "border-white" : "md:border-primary"
+            }`}>NOSOTROS</Link>
           </div>
 
-          <div className="font-bold text-lg flex justify-center">
-            <a href="/assets/images/reglamento.pdf" target="_blank" rel="noopener noreferrer">REGLAMENTO</a>
+          <div
+            className={`font-bold text-lg flex justify-center`}
+          >
+            <a
+              href="/assets/images/reglamento.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`px-2 ${
+                isActive("/reglamento")
+                  ? "border-b-4 "
+                  : "hover:border-b-4 "
+              } ${
+                scrolled? "border-white" : "md:border-primary"
+              }`}
+            >
+              REGLAMENTO
+            </a>
           </div>
 
-          <div className="font-bold text-lg flex justify-center">
-            <a href="/assets/images/programa.pdf" target="_blank" rel="noopener noreferrer">PROGRAMA</a>
+          <div
+            className={`font-bold text-lg flex justify-center`}
+          >
+            <a
+              href="/assets/images/programa.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`px-2 ${
+                isActive("/programa")
+                  ? "border-b-4 "
+                  : "hover:border-b-4 "
+              } ${
+                scrolled? "border-white" : "md:border-primary"
+              }`}
+            >
+              PROGRAMA
+            </a>
           </div>
 
-          <div className="font-bold text-lg flex justify-center">
-            <Map/>
+          <div
+            className={`font-bold text-lg flex justify-center`}
+          >
+            <Map />
           </div>
         </>
       </Navbar.Collapse>

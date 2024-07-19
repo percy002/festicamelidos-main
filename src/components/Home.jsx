@@ -1,25 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 import CarouselMain from "./home/CarouselMain";
-import ContentIndex2 from "./home/ContentIndex2";
-import DynamicCountDown from "./UI/DynamicCountDown";
 import Resena from "./home/Resena";
 
 import slogan from "../assets/images/logos/logo_slogan_gore.png";
 import logoFao from "../assets/images/logos/fao.png";
 import logoInternacionalCamelidos from "../assets/images/logos/internacional-camelidos.png";
-import logoCamelidos from "../assets/images/logos/logo_camelidos_2.webp";
 import fondoCamelidos from "../assets/images/camelidos/fondo_festicamelidos.png";
 import fondoCamelidosMobile from "../assets/images/camelidos/fondo-camelidos-mobile.png";
 import PromocionVideo from "./home/PromocionVideo";
 import Noticias from "./home/Noticias";
-import Participantes from './home/Participantes';
+import Participantes from "./home/Participantes";
 const Home = () => {
   const [backgroundImage, setBackgroundImage] = useState(fondoCamelidos);
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 1024) {
+      if (window.innerWidth <= 768) {
         setBackgroundImage(fondoCamelidosMobile);
       } else {
         setBackgroundImage(fondoCamelidos);
@@ -27,14 +24,13 @@ const Home = () => {
     };
 
     window.addEventListener("resize", handleResize);
-    handleResize(); 
+    handleResize();
     return () => window.removeEventListener("resize", handleResize);
-
   }, []);
 
   return (
     <>
-      <div className="w-full h-[600px] md:h-[125vh] relative">
+      <div className="w-full h-[600px] md:h-[530px] lg:h-[125vh] relative">
         <div
           className="w-full h-full bg-cover bg-center md:bg-bottom  absolute mt-12 md:mt-0 "
           style={{
@@ -42,31 +38,28 @@ const Home = () => {
           }}
         >
           <div className="w-full h-full absolute">
-            <div className="h-full flex flex-col justify-start pt-[1rem] sm:pt-[1.0rem] md:pt-24 xl:pt-16 pb-4">
-              <div className="w-full flex gap-4 md:gap-16 justify-between md:justify-center px-4 md:px-14">
-                <div className="flex items-center">
-                  <img
-                    src={slogan}
-                    alt="logo gobierno regional del cusco"
-                    className="w-36 lg:w-[15rem] object-cover"
-                  />
-                </div>
-                <div className="flex items-center">
-                  <img
-                    src={logoFao}
-                    alt="logo fao"
-                    className="w-16 lg:w-[7rem] object-cover"
-                  />
-                </div>
-                <div className="flex items-center">
-                  <img
-                    src={logoInternacionalCamelidos}
-                    alt="logo Internacional Camelidos"
-                    className="w-36 lg:w-[20rem] object-cover"
-                  />
-                </div>
+            <div className="w-full flex gap-4 md:gap-16 justify-between md:justify-center px-4 md:px-14 absolute top-4 md:top-[10%]">
+              <div className="flex items-center">
+                <img
+                  src={slogan}
+                  alt="logo gobierno regional del cusco"
+                  className="w-36 md:w-[10rem] lg:w-[15rem] object-cover"
+                />
               </div>
-              
+              <div className="flex items-center">
+                <img
+                  src={logoFao}
+                  alt="logo fao"
+                  className="w-16 md:w-[5rem] lg:w-[7rem] object-cover"
+                />
+              </div>
+              <div className="flex items-center">
+                <img
+                  src={logoInternacionalCamelidos}
+                  alt="logo Internacional Camelidos"
+                  className="w-36 md:w-[10rem] lg:w-[20rem] object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>

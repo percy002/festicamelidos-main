@@ -1,4 +1,4 @@
-import noticias1 from "../../assets/images/paginaPrincipal/noticias1.jpg";
+import noticias1 from "../../assets/images/noticias/lanzamiento_c.webp";
 import noticias2 from "../../assets/images/paginaPrincipal/noticias2.jpg";
 import noticias3 from "../../assets/images/paginaPrincipal/noticias3.jpg";
 const Noticias = () => {
@@ -16,7 +16,7 @@ const Noticias = () => {
                 <img src={noticias1} alt="" />
               </div>
               <div className="contenido">
-                <h4>Titulo 1</h4>
+                <h4 className="text-pretty">Lanzamiento de la Feria Internacional de Camelidos, Cusco 2024 </h4>
                 <p>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Provident porro fugit distinctio dolore culpa rem sint est
@@ -26,7 +26,7 @@ const Noticias = () => {
                 <a href="">Leer Mas...</a>
               </div>
               <div className="dia">
-                <p>Junio 20, 2024</p>
+                <p>Julio 07, 2024</p>
               </div>
             </div>
             <div className="card">
