@@ -4,10 +4,8 @@ import noticias3 from "../../assets/images/paginaPrincipal/noticias3.jpg";
 const ContentIndex = () => {
     return (
         <>
-            
-
             <section className="noticias">
-                <div className="container">
+                <div className="container mx-auto">
                     <div className="blog-seccion">
                         <div className="titulo">
                             <h2>Noticias de Eventos</h2>

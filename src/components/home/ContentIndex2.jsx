@@ -2,7 +2,7 @@ import { useState } from "react";
 import ContentIndex from "./ContentIndex";
 import Footer from "../UI/Footer";
 import logoCamelidos from "../../assets/images/logos/logo_camelidos_2.webp";
-
+import videoCamelidos from "../../assets/videos/feria-camelidos.mp4";
 const ContentIndex2 = () => {
     const [isPlaying, setIsPlaying] = useState(false);
 
@@ -11,7 +11,7 @@ const ContentIndex2 = () => {
     };
     return (
         <>
-            <section className="py-10 bg-concrete-50 text-lg ">
+            <section className="py-10 bg-concrete-50 text-xl ">
                 <div className="w-[85%] mx-auto flex flex-col-reverse md:flex-row px-5 gap-x-5 md:items-center">
                     <div className="flex-1 flex flex-col">
                         <h3 className="text-primary">Reseña</h3>
@@ -41,7 +41,7 @@ const ContentIndex2 = () => {
                     </div>
                 </div>
             </section>
-            <section className="py-10 bg-[#734524] bg-opacity-70 text-lg">
+            <section className="py-10 bg-[#734524] bg-opacity-70 text-xl">
                 <div className="w-[85%] mx-auto flex flex-col-reverse xl:flex-row px-5 gap-x-10 gap-y-8 md:items-center ">
                     <div className="flex-1">
                         <div className="flex justify-center">
@@ -54,7 +54,8 @@ const ContentIndex2 = () => {
                                 // onPause={() => setIsPlaying(false)}
                                 // onEnded={() => setIsPlaying(false)}
                             /> */}
-                            <iframe width="700" height="400" src="https://www.youtube.com/embed/doTwMlkl-Kg" title="Año Internacional de los Camélidos 2024 - identidad visual" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            {/* <iframe width="700" height="400" src="https://www.youtube.com/embed/doTwMlkl-Kg" title="Año Internacional de los Camélidos 2024 - identidad visual" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
+                            <video src={videoCamelidos} className="max-w-full mx-auto aspect-video" controls autoPlay poster={logoCamelidos}></video>
                             {/* {!isPlaying && (
                                 <div
                                     className="absolute inset-0 flex items-center justify-center cursor-pointer"

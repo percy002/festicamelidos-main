@@ -296,3 +296,7 @@ footer .grupo-2 small {
     flex-wrap: wrap;
     margin-top: 2rem;
 }
+
+.bu-map span{
+    padding: 0;
+}
