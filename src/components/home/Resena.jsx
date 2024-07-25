@@ -3,7 +3,7 @@ import logoCamelidos from "../../assets/images/logos/logo_camelidos.png";
 const Resena = () => {
   return (
     <section className="py-10 bg-concrete-50 text-xl ">
-      <div className="w-[85%] mx-auto flex flex-col-reverse md:flex-row px-5 gap-x-5 md:items-center">
+      <div className="w-[85%] mx-auto flex flex-col-reverse xl:flex-row px-5 gap-x-5 xl:items-center">
         <div className="flex-1 flex flex-col">
           <h2 className="text-primary">Reseña</h2>
           <p className="text-justify text-gray-700">

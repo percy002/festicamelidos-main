@@ -7,8 +7,11 @@ const Noticias = () => {
       <div className="container mx-auto">
         <div className="blog-seccion">
           <div className="titulo">
-            <h2>Eventos y Noticias</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+            <h2>Actividades y Noticias</h2>
+            <p>
+              Te mantenemos al día con nuestras actividades y noticias más
+              relevantes. Aquí encontrarás todo lo que necesitas saber.
+            </p>
           </div>
           <div className="cards">
             <div className="card">
@@ -16,7 +19,9 @@ const Noticias = () => {
                 <img src={noticias1} alt="" />
               </div>
               <div className="contenido">
-                <h4 className="text-pretty">Lanzamiento de la Feria Internacional de Camelidos, Cusco 2024 </h4>
+                <h4 className="text-pretty">
+                  Lanzamiento de la Feria Internacional de Camelidos, Cusco 2024{" "}
+                </h4>
                 <p>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Provident porro fugit distinctio dolore culpa rem sint est

@@ -98,7 +98,30 @@ function NavbarFB() {
           <div
             className={`font-bold text-lg flex justify-center`}
           >
-            <Map />
+            <Link to="/ubicacion" className={`px-2 ${
+              isActive("/ubicacion")
+                ? "border-b-4 "
+                : "hover:border-b-4 "
+            } ${
+              scrolled? "border-white" : "md:border-primary"
+            }`}>UBICACIÓN</Link>
+          </div>
+
+          <div
+            className={`font-bold text-lg flex justify-center`}
+          >
+            <a href="/">
+              REGÍSTRATE
+            </a>
+          </div>
+
+
+          
+
+          <div
+            className={`font-bold text-lg flex justify-center`}
+          >
+            {/* <Map /> */}
           </div>
         </>
       </Navbar.Collapse>

@@ -68,7 +68,7 @@ const Home = () => {
       <Resena />
       <PromocionVideo />
       <Noticias />
-      <Participantes />
+      {/* <Participantes /> */}
     </>
   );
 };

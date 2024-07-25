@@ -19,11 +19,15 @@ export default {
           '70': '.70',
       },
       colors:{
-          primary: '#9E0B26',
+          primary: '#981915',
           secondary: '#C9C4C0',
+          "black-25": 'rgba(0, 0, 0, 0.25)',
       },
       backgroundImage: {
           'concrete-50': "url('/src/assets/images/bg/concrete-50.png')",
+          'fondo-mapi': "url('/src/assets/images/bg/fondo-mapi.png')",
+          'textura-gris': "url('/src/assets/images/bg/textura-gris.webp')",
+
       },
     
   },
