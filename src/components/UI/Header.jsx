@@ -1,9 +1,10 @@
 import slogan from "../../assets/images/logos/logo_slogan_gore.png";
 import logoFao from "../../assets/images/logos/fao.png";
 import logoInternacionalCamelidos from "../../assets/images/logos/internacional-camelidos.png";
+import logoalpacascusco from "../../assets/images/logos/alpacas_cusco.png";
 
 
-const Header = ({contentHeader,titleHeader}) => {
+const Header = ({ contentHeader, titleHeader }) => {
   return (
     <section>
       <div className="bg-fondo-mapi bg-cover w-full h-fit">
@@ -27,6 +28,13 @@ const Header = ({contentHeader,titleHeader}) => {
               src={logoInternacionalCamelidos}
               alt="logo Internacional Camelidos"
               className="w-24 md:w-[10rem] lg:w-[20rem] object-cover"
+            />
+          </div>
+          <div className="flex items-center">
+            <img
+              src={logoalpacascusco}
+              alt="logo Alpacas Cusco"
+              className="w-36 md:w-[12rem] lg:w-[13rem] object-cover"
             />
           </div>
         </div>

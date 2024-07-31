@@ -1,6 +1,9 @@
-import galeria1 from "../../assets/images/camelidos/galeria/galeria1.jpg";
-import galeria2 from "../../assets/images/camelidos/galeria/galeria2.jpeg";
-import galeria3 from "../../assets/images/camelidos/galeria/galeria3.jpeg";
+import galeria1 from "../../assets/images/camelidos/galeria/alpaca1.png";
+import galeria2 from "../../assets/images/camelidos/galeria/alpaca2.png";
+import galeria3 from "../../assets/images/camelidos/galeria/alpaca3.png";
+import galeria4 from "../../assets/images/camelidos/galeria/galeria1.jpg";
+import galeria5 from "../../assets/images/camelidos/galeria/galeria2.jpeg";
+import galeria6 from "../../assets/images/camelidos/galeria/galeria3.jpeg";
 import Header from "../UI/Header";
 import logoCamelidos from "../../assets/images/logos/logo_camelidos.png";
 
@@ -52,6 +55,17 @@ const Nosotros = () => {
           </div>
           <div className="w-full md:w-1/2 lg:w-1/3 p-2">
             <img src={galeria3} alt="" className="w-full h-auto" />
+          </div>
+        </div>
+        <div className="flex flex-wrap">
+          <div className="w-full md:w-1/2 lg:w-1/3 p-2">
+            <img src={galeria4} alt="" className="w-full h-auto" />
+          </div>
+          <div className="w-full md:w-1/2 lg:w-1/3 p-2">
+            <img src={galeria5} alt="" className="w-full h-full" />
+          </div>
+          <div className="w-full md:w-1/2 lg:w-1/3 p-2">
+            <img src={galeria6} alt="" className="w-full h-auto" />
           </div>
         </div>
       </section>

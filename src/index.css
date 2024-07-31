@@ -187,13 +187,15 @@ body{
 }
 .cards{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 50px;
     margin: 25px auto;
+    
 }
 .cards .card{
     width: 100%;
     position: relative;
+    box-shadow: 0 .1rem .6rem rgba(0, 0, 0, 0.2);
 }
 .imagen-seccion img{
     width: 100%;
@@ -212,9 +214,11 @@ body{
 }
 .contenido a{
     font-size: 1.2rem;
+    font-weight: bold;
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     margin-top: 12px;
+    border-radius: 15px;
     display: inline-block;
     background-color: var(--rojo);
     padding: 8px 15px;
@@ -224,6 +228,7 @@ body{
     top: 0;
     left: 0;
     display: inline-block;
+    
     background-color: var(--rojo);
     padding: 6px 15px;
     color: white;
@@ -300,3 +305,4 @@ footer .grupo-2 small {
 .bu-map span{
     padding: 0;
 }
+/*cambios Elvis*/

@@ -20,13 +20,10 @@ const Footer = () => {
             <h4 className="text-center text-white">Mas Información</h4>
             <ul className="flex flex-col text-white font-bold items-center gap-y-5">
               <li>
-                <a href="">REGLAMENTO</a>
+                <a href="/reglamento">REGLAMENTO</a>
               </li>
               <li>
-                <a href="">PROGRAMA</a>
-              </li>
-              <li>
-                <a href="">RESOLUCIÓN</a>
+                <a href="/programa">PROGRAMA</a>
               </li>
             </ul>
           </div>

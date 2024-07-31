@@ -46,7 +46,7 @@ function NavbarFB() {
       } `}
     >
       <Navbar.Toggle className="text-white hover:bg-transparent" />
-      <Navbar.Collapse className="mx-auto">
+      <Navbar.Collapse className="mx-auto justify-center">
         <>
           <div
             className={`font-bold text-lg flex justify-center`}
@@ -108,9 +108,9 @@ function NavbarFB() {
           </div>
 
           <div
-            className={`font-bold text-lg flex justify-center`}
+            className={`font-bold text-lg flex justify-center bg-red-700 py-2 px-4 rounded`}
           >
-            <a href="/">
+            <a target="_blank" href="https://registrofesticamelidos.gorecuscoproyectoalpacas.com/" className="text-white">
               REGÍSTRATE
             </a>
           </div>

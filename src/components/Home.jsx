@@ -6,6 +6,7 @@ import Resena from "./home/Resena";
 import slogan from "../assets/images/logos/logo_slogan_gore.png";
 import logoFao from "../assets/images/logos/fao.png";
 import logoInternacionalCamelidos from "../assets/images/logos/internacional-camelidos.png";
+import logoalpacascusco from "../assets/images/logos/alpacas_cusco.png";
 import fondoCamelidos from "../assets/images/camelidos/fondo_festicamelidos.png";
 import fondoCamelidosMobile from "../assets/images/camelidos/fondo-camelidos-mobile.png";
 import PromocionVideo from "./home/PromocionVideo";
@@ -38,7 +39,7 @@ const Home = () => {
           }}
         >
           <div className="w-full h-full absolute">
-            <div className="w-full flex gap-4 md:gap-16 justify-between md:justify-center px-4 md:px-14 absolute top-4 md:top-[10%]">
+            <div className="w-full flex gap-4 md:gap-16 justify-between md:justify-center px-20 md:px-14 absolute top-4 md:top-[10%]">
               <div className="flex items-center">
                 <img
                   src={slogan}
@@ -58,6 +59,13 @@ const Home = () => {
                   src={logoInternacionalCamelidos}
                   alt="logo Internacional Camelidos"
                   className="w-36 md:w-[10rem] lg:w-[20rem] object-cover"
+                />
+              </div>
+              <div className="flex items-center">
+                <img
+                  src={logoalpacascusco}
+                  alt="logo Alpacas Cusco"
+                  className="w-36 md:w-[12rem] lg:w-[13rem] object-cover"
                 />
               </div>
             </div>
