@@ -6,8 +6,9 @@ import galeria5 from "../../assets/images/camelidos/galeria/galeria2.jpeg";
 import galeria6 from "../../assets/images/camelidos/galeria/galeria3.jpeg";
 import Header from "../UI/Header";
 import logoCamelidos from "../../assets/images/logos/logo_camelidos.png";
-
+import { useScrollTop } from "../../hooks/useScrollTop";
 const Nosotros = () => {
+  useScrollTop();
   return (
     <div className="">
       <Header titleHeader={"Acerca de Nosotros"} contentHeader={"Conoce mejor nuestra historia."} />

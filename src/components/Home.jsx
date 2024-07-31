@@ -12,7 +12,10 @@ import fondoCamelidosMobile from "../assets/images/camelidos/fondo-camelidos-mob
 import PromocionVideo from "./home/PromocionVideo";
 import Noticias from "./home/Noticias";
 import Participantes from "./home/Participantes";
+import { useScrollTop } from "../hooks/useScrollTop";
 const Home = () => {
+
+  useScrollTop();
   const [backgroundImage, setBackgroundImage] = useState(fondoCamelidos);
 
   useEffect(() => {

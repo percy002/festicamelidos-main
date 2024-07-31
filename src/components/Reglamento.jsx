@@ -1,6 +1,8 @@
 import reglamento from "../assets/docs/reglamento.pdf";
+import { useScrollTop } from "../hooks/useScrollTop";
 import Header from "./UI/Header";
 const Reglamento = () => {
+  useScrollTop();
   return (
     <>
       <Header titleHeader={"REGLAMENTO"} contentHeader={"Descarga nuestro programa"} />

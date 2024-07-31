@@ -6,14 +6,20 @@ const Resena = () => {
       <div className="w-[85%] mx-auto flex flex-col-reverse xl:flex-row px-5 gap-x-5 xl:items-center">
         <div className="flex-1 flex flex-col">
           <h2 className="text-primary">Reseña</h2>
-          <p className="text-justify text-gray-700">
-            El Festival de Camélidos Andinos 2024, celebrado en la ciudad de
-            Cusco, ha sido una experiencia inolvidable que resalta la rica
-            herencia cultural y la biodiversidad única de los Andes peruanos.
-            Este evento, que atrae a turistas y locales por igual, es una
-            celebración vibrante de la importancia histórica y económica de los
-            camélidos en la región.
+          <p>
+            Los camélidos ocupan un lugar primordial en la cultura, la economía,
+            la seguridad alimentaria y los medios de subsistencia de las
+            comunidades que habitan los altiplanos andinos y las tierras áridas
+            y semiáridas de África y Asia, en particular entre los Pueblos
+            Indígenas. Aun en condiciones climáticas extremas, siguen
+            produciendo fibra y alimentos nutritivos. En este sentido,el Año
+            Internacional de los Camélidos representa una oportunidad sin igual
+            de concienciar sobre la función que tienen los camélidos para
+            generar resiliencia ante el cambio climático, especialmente en las
+            montañas y las tierras áridas y semiáridas.
           </p>
+          
+
           {/* <Link href="/informacion_general" className="bg-primary rounded-full text-white w-fit mt-4 px-4 py-1 border-4 hover:border-primary hover:bg-white hover:text-primary">
                             Leer Mas
                         </Link> */}

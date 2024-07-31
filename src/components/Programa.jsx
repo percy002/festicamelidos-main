@@ -1,7 +1,9 @@
 import programa from "../assets/docs/programa.pdf";
+import { useScrollTop } from "../hooks/useScrollTop";
 import Header from "./UI/Header";
 
 const Programa = () => {
+  useScrollTop();
   return (
     <>
       <Header titleHeader={"PROGRAMA"} contentHeader={"Descarga nuestro programa"} />

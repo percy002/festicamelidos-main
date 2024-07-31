@@ -4,6 +4,10 @@ import camelidos1 from "../../assets/images/camelidos/carousel/camelidos1.jpg";
 import camelidos2 from "../../assets/images/camelidos/carousel/camelidos2.jpg";
 import camelidos4 from "../../assets/images/camelidos/carousel/camelidos4.jpg";
 
+import portada_imagen1 from "../../assets/images/camelidos/carousel/portada_imagen1.jpg";
+import portada_imagen2 from "../../assets/images/camelidos/carousel/portada_imagen2.jpg";
+import portada_imagen3 from "../../assets/images/camelidos/carousel/portada_imagen3.jpg";
+
 const CarouselCustomTheme = {
   scrollContainer: {
     "base": "flex h-full snap-mandatory overflow-y-hidden overflow-x-scroll scroll-smooth",
@@ -13,10 +17,14 @@ const CarouselCustomTheme = {
 function CarouselMain() {
   return (
     <div className="h-40 sm:h-64 xl:h-[70vh] relative">
-      <Carousel slideInterval={2000} theme={CarouselCustomTheme}>
-        <img src={camelidos1} alt="imagen feria de huancaro" className="object-cover h-full w-auto"/>
+      <Carousel slideInterval={3000} theme={CarouselCustomTheme}>
+        {/* <img src={camelidos1} alt="imagen feria de huancaro" className="object-cover h-full w-auto"/>
         <img src={camelidos2} alt="imagen feria de huancaro" className="object-cover h-full w-auto"/>
         <img src={camelidos4} alt="imagen feria de huancaro" className="object-cover h-full w-auto"/>
+         */}
+        <img src={portada_imagen1} alt="imagen feria de huancaro" className="w-full"/>
+        <img src={portada_imagen2} alt="imagen feria de huancaro" className="w-full"/>
+        <img src={portada_imagen3} alt="imagen feria de huancaro" className="w-full"/>
         
         
       </Carousel>

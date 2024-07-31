@@ -14,6 +14,14 @@ const customNavbar = {
       },
     },
   },
+  collapse: {
+    base: "w-full md:block md:w-auto",
+    list: "mt-4 flex flex-col items-center md:mt-0 md:flex-row md:space-x-8 md:text-sm md:font-medium",
+    hidden: {
+      on: "hidden",
+      off: "",
+    },
+  },
 };
 
 function NavbarFB() {
@@ -48,79 +56,73 @@ function NavbarFB() {
       <Navbar.Toggle className="text-white hover:bg-transparent" />
       <Navbar.Collapse className="mx-auto justify-center">
         <>
-          <div
-            className={`font-bold text-lg flex justify-center`}
-          >
-            <Link to="/" className={`px-2 ${
-              isActive("/")
-                ? "border-b-4 "
-                : "hover:border-b-4 "
-            } ${
-              scrolled? "border-white" : "md:border-primary"
-            }`}>INICIO</Link>
+          <div className={`font-bold text-lg flex justify-center`}>
+            <Link
+              to="/"
+              className={`px-2 ${
+                isActive("/") ? "border-b-4 " : "hover:border-b-4 "
+              } ${scrolled ? "border-white" : "md:border-primary"}`}
+            >
+              INICIO
+            </Link>
           </div>
-          <div
-            className={`font-bold text-lg flex justify-center`}
-          >
-            <Link to="/nosotros" className={`px-2 ${
-              isActive("/nosotros")
-                ? "border-b-4 "
-                : "hover:border-b-4 "
-            } ${
-              scrolled? "border-white" : "md:border-primary"
-            }`}>NOSOTROS</Link>
+          <div className={`font-bold text-lg flex justify-center`}>
+            <Link
+              to="/nosotros"
+              className={`px-2 ${
+                isActive("/nosotros") ? "border-b-4 " : "hover:border-b-4 "
+              } ${scrolled ? "border-white" : "md:border-primary"}`}
+            >
+              NOSOTROS
+            </Link>
           </div>
 
-          <div
-            className={`font-bold text-lg flex justify-center`}
-          >
-            <Link to="/reglamento" className={`px-2 ${
-              isActive("/reglamento")
-                ? "border-b-4 "
-                : "hover:border-b-4 "
-            } ${
-              scrolled? "border-white" : "md:border-primary"
-            }`}>REGLAMENTO</Link>
+          <div className={`font-bold text-lg flex justify-center`}>
+            <Link
+              to="/reglamento"
+              className={`px-2 ${
+                isActive("/reglamento") ? "border-b-4 " : "hover:border-b-4 "
+              } ${scrolled ? "border-white" : "md:border-primary"}`}
+            >
+              REGLAMENTO
+            </Link>
           </div>
 
-          <div
-            className={`font-bold text-lg flex justify-center`}
-          >
-            <Link to="/programa" className={`px-2 ${
-              isActive("/programa")
-                ? "border-b-4 "
-                : "hover:border-b-4 "
-            } ${
-              scrolled? "border-white" : "md:border-primary"
-            }`}>PROGRAMA</Link>
+          <div className={`font-bold text-lg flex justify-center`}>
+            <Link
+              to="/programa"
+              className={`px-2 ${
+                isActive("/programa") ? "border-b-4 " : "hover:border-b-4 "
+              } ${scrolled ? "border-white" : "md:border-primary"}`}
+            >
+              PROGRAMA
+            </Link>
           </div>
 
-          <div
-            className={`font-bold text-lg flex justify-center`}
-          >
-            <Link to="/ubicacion" className={`px-2 ${
-              isActive("/ubicacion")
-                ? "border-b-4 "
-                : "hover:border-b-4 "
-            } ${
-              scrolled? "border-white" : "md:border-primary"
-            }`}>UBICACIÓN</Link>
+          <div className={`font-bold text-lg flex justify-center`}>
+            <Link
+              to="/ubicacion"
+              className={`px-2 ${
+                isActive("/ubicacion") ? "border-b-4 " : "hover:border-b-4 "
+              } ${scrolled ? "border-white" : "md:border-primary"}`}
+            >
+              UBICACIÓN
+            </Link>
           </div>
 
           <div
             className={`font-bold text-lg flex justify-center bg-red-700 py-2 px-4 rounded`}
           >
-            <a target="_blank" href="https://registrofesticamelidos.gorecuscoproyectoalpacas.com/" className="text-white">
+            <a
+              target="_blank"
+              href="https://registrofesticamelidos.gorecuscoproyectoalpacas.com/"
+              className="text-white"
+            >
               REGÍSTRATE
             </a>
           </div>
 
-
-          
-
-          <div
-            className={`font-bold text-lg flex justify-center`}
-          >
+          <div className={`font-bold text-lg flex justify-center`}>
             {/* <Map /> */}
           </div>
         </>
